@@ -2,7 +2,9 @@ package stress_core
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
+	"os"
 	"time"
 )
 
@@ -24,12 +26,14 @@ type OutputResult struct {
 func readJsonConfig(path string) map[string]interface{}{
 	data , err := ioutil.ReadFile(path)
 	if err != nil {
-		panic("Read json config error")
+		fmt.Println("Read json config error")
+		os.Exit(-1)
 	}
 	var allData map[string]interface{}
 	err = json.Unmarshal(data,&allData)
 	if err != nil {
-		panic("Unmarshal json data error")
+		fmt.Println("Unmarshal json data error")
+		os.Exit(-1)
 	}
 	return allData
 }

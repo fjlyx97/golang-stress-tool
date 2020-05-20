@@ -1,7 +1,5 @@
 module golang-stress
 
-require golang-stress/stress_core v0.0.0
-
-replace golang-stress/stress_core => D:\GoProject\src\golang-stress\stress_core
-
 go 1.13
+
+require github.com/fjlyx97/golang-stress-tool/stress_core v0.0.0-20200520014334-e5bde455f894

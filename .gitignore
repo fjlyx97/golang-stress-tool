@@ -1,3 +1,4 @@
 .idea/
 golang-stress.exe
 *.exe
+go.sum
