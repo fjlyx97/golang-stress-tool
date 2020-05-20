@@ -1,0 +1,12 @@
+{
+    "method" : "POST",
+    "url" : "http://www.xx.com/query/",
+    "content_type" : "application/json",
+    "timeout" : 5,
+    "keep_alive" : false,
+    "post_data" : {
+        "test": {
+            "testText": ["Hello"]
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "method" : "GET",
+    "url" : "http://www.baidu.com/",
+    "timeout" : 5,
+    "keep_alive" : false
+}
